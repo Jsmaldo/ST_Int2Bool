@@ -1,0 +1,38 @@
+//////////////////////////////////////
+//Find binary value of an integer
+//////////////////////////////////////
+out_Complete := in_Enable;
+IF in_Enable THEN
+	B8:= ANY_TO_DINT(in_Integer_Input); //convert input to DINT
+	B8:= MOD(B8,2);						//get remainder for 8th bit
+	B8a:= B8/2;							//divide by 2
+	OutPutBit8:= ANY_TO_BOOL(B8);		//set output bit 
+	
+	B7:= MOD(B8a,2);					//get remainder for 7th bit
+	B7a:= B8a/2;						//divide by 2
+	OutPutBit7:= ANY_TO_BOOL(B7);		//set output bit
+	
+	B6:= MOD(B7a,2);					//get remainder for 6th bit
+	B6a:= B7a/2;						//divide by 2
+	OutPutBit6:= ANY_TO_BOOL(B6);		//set output bit
+	
+	B5:= MOD(B6a,2);					//get remainder for 5th bit
+	B5a:= B6a/2;						//divide by 2
+	OutPutBit5:= ANY_TO_BOOL(B5);		//set output bit
+	
+	B4:= MOD(B5a,2);					//get remainder for 4th bit
+	B4a:= B5a/2;						//divide by 2
+	OutPutBit4:= ANY_TO_BOOL(B4);		//set output bit
+	
+	B3:= MOD(B4a,2);					//get remainder for 3rd bit
+	B3a:= B4a/2;						//divide by 2
+	OutPutBit3:= ANY_TO_BOOL(B3);		//set output bit
+	
+	B2:= MOD(B3a,2);					//get remainder for 2nd bit
+	B2a:= B3a/2;						//divide by 2
+	OutPutBit2:= ANY_TO_BOOL(B2);		//set output bit
+	
+	B1:= MOD(B2a,2);					//get remainder for 1st bit
+	B1a:= B2a/2;						//divide by 2
+	OutPutBit1:= ANY_TO_BOOL(B1);		//set output bit
+END_IF;
