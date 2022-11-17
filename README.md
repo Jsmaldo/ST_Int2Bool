@@ -4,8 +4,8 @@
 This was written in Connected Components Workbench V12, specifically for Allen-Bradley Micro800 Series PLCs.
 This user-defined function block will take an integer input 0-255 and set an array of outputs based on the binary value of the input.
 
-![image](https://user-images.githubusercontent.com/31356222/202545067-02c9c583-47cd-44fe-a336-2f05638ff004.png)
+![image](https://user-images.githubusercontent.com/31356222/202570983-e84e9798-8a9a-441b-87ed-902f25633d4b.png)
 
-![image](https://user-images.githubusercontent.com/31356222/202551745-10892992-2d71-4def-b391-c5528288d5c2.png)
+![image](https://user-images.githubusercontent.com/31356222/202567859-0a3be38b-27f8-42bd-a81a-599f07170beb.png)
 
-![image](https://user-images.githubusercontent.com/31356222/202545361-d387c879-a93d-4e7b-ad46-82d674e4664a.png)
+![image](https://user-images.githubusercontent.com/31356222/202570881-3f04b638-c098-465a-a913-7b8989c306d4.png)
