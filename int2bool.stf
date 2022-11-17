@@ -3,36 +3,33 @@
 //////////////////////////////////////
 out_Complete := in_Enable;
 IF in_Enable THEN
-	B8:= ANY_TO_DINT(in_Integer_Input); //convert input to DINT
-	B8:= MOD(B8,2);						//get remainder for 8th bit
-	B8a:= B8/2;							//divide by 2
-	OutPutBit8:= ANY_TO_BOOL(B8);		//set output bit 
+       
+	B[7] := MOD(in_Integer_Input, 2);
+	Ba[7] := in_Integer_Input / 2;
 	
-	B7:= MOD(B8a,2);					//get remainder for 7th bit
-	B7a:= B8a/2;						//divide by 2
-	OutPutBit7:= ANY_TO_BOOL(B7);		//set output bit
+	B[6] := MOD(Ba[7],2);
+	Ba[6] := Ba[7] / 2;
 	
-	B6:= MOD(B7a,2);					//get remainder for 6th bit
-	B6a:= B7a/2;						//divide by 2
-	OutPutBit6:= ANY_TO_BOOL(B6);		//set output bit
+	B[5] := MOD(Ba[6],2);
+	Ba[5] := Ba[6] / 2;
 	
-	B5:= MOD(B6a,2);					//get remainder for 5th bit
-	B5a:= B6a/2;						//divide by 2
-	OutPutBit5:= ANY_TO_BOOL(B5);		//set output bit
+	B[4] := MOD(Ba[5],2);
+	Ba[4] := Ba[5] / 2;
 	
-	B4:= MOD(B5a,2);					//get remainder for 4th bit
-	B4a:= B5a/2;						//divide by 2
-	OutPutBit4:= ANY_TO_BOOL(B4);		//set output bit
+	B[3] := MOD(Ba[4],2);
+	Ba[3] := Ba[4] / 2;
 	
-	B3:= MOD(B4a,2);					//get remainder for 3rd bit
-	B3a:= B4a/2;						//divide by 2
-	OutPutBit3:= ANY_TO_BOOL(B3);		//set output bit
+	B[2] := MOD(Ba[3],2);
+	Ba[2] := Ba[3] / 2;
 	
-	B2:= MOD(B3a,2);					//get remainder for 2nd bit
-	B2a:= B3a/2;						//divide by 2
-	OutPutBit2:= ANY_TO_BOOL(B2);		//set output bit
+	B[1] := MOD(Ba[2],2);
+	Ba[1] := Ba[2] / 2;
 	
-	B1:= MOD(B2a,2);					//get remainder for 1st bit
-	B1a:= B2a/2;						//divide by 2
-	OutPutBit1:= ANY_TO_BOOL(B1);		//set output bit
+	B[0] := MOD(Ba[1],2);
+	Ba[0] := Ba[1] / 2;
+	
+	
+    FOR X := 0 TO 7 BY 1 DO
+        OutputBit[X]:= ANY_TO_BOOL(B[X]);   //set output bit 
+    END_FOR;
 END_IF;
