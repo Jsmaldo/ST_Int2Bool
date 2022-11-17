@@ -1,5 +1,5 @@
 # ST_Int2Bool
-* A structured text function block written in Connected Components Workbench V12
+* A structured text function block written in Connected Components Workbench V12 designed to convert a decimal input to an 8-bit binary array output. Used for barcode scanning PLC controls.
 
 This was written in Connected Components Workbench V12, specifically for Allen-Bradley Micro800 Series PLCs.
 This user-defined function block will take an integer input 0-255 and set an array of outputs based on the binary value of the input.
