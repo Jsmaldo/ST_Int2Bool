@@ -6,30 +6,33 @@ IF in_Enable THEN
        
 	B[7] := MOD(in_Integer_Input, 2);
 	Ba[7] := in_Integer_Input / 2;
+	OutputBit7:= ANY_TO_BOOL(B[7]);   //set output bit 
 	
 	B[6] := MOD(Ba[7],2);
 	Ba[6] := Ba[7] / 2;
+	OutputBit6:= ANY_TO_BOOL(B[6]);   //set output bit 
 	
 	B[5] := MOD(Ba[6],2);
 	Ba[5] := Ba[6] / 2;
+	OutputBit5:= ANY_TO_BOOL(B[5]);   //set output bit 
 	
 	B[4] := MOD(Ba[5],2);
 	Ba[4] := Ba[5] / 2;
+	OutputBit4:= ANY_TO_BOOL(B[4]);   //set output bit 
 	
 	B[3] := MOD(Ba[4],2);
 	Ba[3] := Ba[4] / 2;
+	OutputBit3:= ANY_TO_BOOL(B[3]);   //set output bit 
 	
 	B[2] := MOD(Ba[3],2);
 	Ba[2] := Ba[3] / 2;
+	OutputBit2:= ANY_TO_BOOL(B[2]);   //set output bit 
 	
 	B[1] := MOD(Ba[2],2);
 	Ba[1] := Ba[2] / 2;
+	OutputBit1:= ANY_TO_BOOL(B[1]);   //set output bit 
 	
 	B[0] := MOD(Ba[1],2);
 	Ba[0] := Ba[1] / 2;
-	
-	
-    FOR X := 0 TO 7 BY 1 DO
-        OutputBit[X]:= ANY_TO_BOOL(B[X]);   //set output bit 
-    END_FOR;
+	OutputBit0:= ANY_TO_BOOL(B[0]);   //set output bit 
 END_IF;
